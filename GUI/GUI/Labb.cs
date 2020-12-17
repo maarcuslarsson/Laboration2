@@ -6,9 +6,7 @@ using System.Threading.Tasks;
 
 namespace GUI
 {
-    abstract class Användare
+    class Labb
     {
-        private string PersonNr;
-        private string Namn;
     }
 }

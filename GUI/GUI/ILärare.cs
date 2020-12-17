@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace GUI
 {
-    abstract class Användare
+    interface ILärare
     {
-        private string PersonNr;
-        private string Namn;
+
     }
 }

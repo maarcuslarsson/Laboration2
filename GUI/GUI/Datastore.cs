@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace GUI
 {
-    abstract class Användare
+   public class Datastore
     {
-        private string PersonNr;
-        private string Namn;
+        internal static List<Lärare1> LärareDB = new List<Lärare1>();
+
     }
 }

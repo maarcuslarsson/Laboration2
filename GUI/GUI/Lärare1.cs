@@ -6,28 +6,51 @@ using System.Threading.Tasks;
 
 namespace GUI
 {
-  
-
-    class Lärare1
-        
+    class Lärare1: Användare, ILärare   
     {
-        public class Lärare: Användare
+        //public List<Kurs> lärareKurs = new List<Kurs>();
+        public List<Labb> lärareLabb = new List<Labb>();
 
+        private string namn;
+        private string pernr;
+
+        // get & set för att komma åt de privata variablerna
+        // samt att ge dem värden
+        public string PerNr
         {
-           public void LäggTillLärare()
+            get { return pernr; }
+            set { pernr = value; }
+        }
 
-            {
-                String [] LärarNamn = new string [10];
 
-                for (int i = 0; i < LärarNamn.Length; i++)
-                {
-                    LärarNamn[i] = Console.ReadLine();
-                }
-            }
+        public string Namn
+        {
+            get { return namn; }
+            set { namn = value; }
+        }
+
+        public Lärare1()
+        {
+
+        }
+
+        // konstruktor 
+        // detta är det första som körs när en ny lärare skapas
+        public Lärare1(string n, string p)
+        {
+            Namn = n;
+            PerNr = p;
+        }
+
+        public void LäggTillLärare()
+        {
+            
+
         }
     }
-
-
 }
+
+
+
 
 
